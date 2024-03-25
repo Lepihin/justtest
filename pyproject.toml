@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hello"
+version = "0.1.0"
+description = ""
+authors = ["Artem Lepihin <artemlepihin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.22.2"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+say-hello = "hello.scripts.say_hello:main"
